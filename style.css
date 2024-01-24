@@ -41,10 +41,11 @@
 
 h1{
     position: absolute;
-    top:3rem;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 10rem;
+    top:10%;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    justify-self: center;
+    font-size: 10vw;
     letter-spacing: 4px;
     color: white;
     text-shadow: 0 0 10px rgb(0,0,0,3);
@@ -59,13 +60,14 @@ section{
 .secHeading{
     
     font-size: 5rem;
-    padding: 0 10rem;
+    padding: 0% 10%;
 }
 
 .text{
     font-size: 1.5rem;
-    padding:0 10rem;
+    padding:0% 10%;
     margin: 5rem 0;
+    flex-wrap: wrap;
 }
 
 .desc{
@@ -132,4 +134,21 @@ section{
 .website-icon{
     width:15px;
     height: 15px;
+}
+
+@media((min-width:200px) and (max-width:500px))
+{
+    h1{
+        font-size: 200%;
+    }
+    .secHeading{
+        font-size:50%
+    }
+    .desc{
+        font-size: 160%;
+    }
+    .secHeading{
+        font-size: 160%;
+        
+    }
 }
